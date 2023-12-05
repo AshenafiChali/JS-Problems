@@ -44,4 +44,17 @@ function isPalindrome(str) {
   // Example usage:
   const array = [1, 2, 3, 4, 5];
   console.log("The length of the array is: " + getArrayLength(array)); // Output will be 5
+  //Question 6
+  function getRandomNumber(min, max) {
+    // Generate a random number between min and max (inclusive of both)
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+  
+  // Example usage:
+  let minimumValue = 10;
+  let maximumValue = 20;
+  
+  let randomNum = getRandomNumber(minimumValue, maximumValue);
+  console.log("Random number between " + minimumValue + " and " + maximumValue + " is: " + randomNum);
+  
   
