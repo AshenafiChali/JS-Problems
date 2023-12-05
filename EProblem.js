@@ -56,5 +56,14 @@ function isPalindrome(str) {
   
   let randomNum = getRandomNumber(minimumValue, maximumValue);
   console.log("Random number between " + minimumValue + " and " + maximumValue + " is: " + randomNum);
+  //Question 7
+  function roundNumberToDecimalPlaces(number, decimalPlaces) {
+    return Number(number.toFixed(decimalPlaces));
+  }
+  
+  // Example usage:
+  let originalNumber = 3.14159;
+  let roundedNumber = roundNumberToDecimalPlaces(originalNumber, 2);
+  console.log("Original number: " + originalNumber + ", Rounded to 2 decimal places: " + roundedNumber);
   
   
