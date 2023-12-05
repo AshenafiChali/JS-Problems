@@ -36,3 +36,12 @@ function isPalindrome(str) {
   // Example usage:
   console.log(isPalindrome("racecar")); // Output will be true
   console.log(isPalindrome("hello")); // Output will be false
+  //Question 5
+  function getArrayLength(arr) {
+    return arr.length;
+  }
+  
+  // Example usage:
+  const array = [1, 2, 3, 4, 5];
+  console.log("The length of the array is: " + getArrayLength(array)); // Output will be 5
+  
