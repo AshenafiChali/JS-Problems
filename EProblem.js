@@ -7,7 +7,7 @@ function addNumbers(num1, num2) {
   
   // Example usage:
   let result = addNumbers(80, 123);
-  console.log("The sum is: " + result); // Output will be 15
+  console.log("The sum is: " + result); // Output will be 203
   //question 3
 
   function checkEvenOrOdd(number) {
