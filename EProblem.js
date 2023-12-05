@@ -65,5 +65,14 @@ function isPalindrome(str) {
   let originalNumber = 3.14159;
   let roundedNumber = roundNumberToDecimalPlaces(originalNumber, 2);
   console.log("Original number: " + originalNumber + ", Rounded to 2 decimal places: " + roundedNumber);
+  //Question 8
+  function calculateSquareRoot(number) {
+    return Math.sqrt(number);
+  }
+  
+  // Example usage:
+  let num = 16;
+  let squareRoot = calculateSquareRoot(num);
+  console.log("Square root of " + num + " is: " + squareRoot); // Output will be 4
   
   
