@@ -1,4 +1,5 @@
-console.log('Hello, World!'); 
+ //QUESTION 1
+ console.log('Hello, World!'); 
 //QUESTION 2
 function addNumbers(num1, num2) {
     return num1 + num2;
