@@ -74,5 +74,22 @@ function isPalindrome(str) {
   let num = 16;
   let squareRoot = calculateSquareRoot(num);
   console.log("Square root of " + num + " is: " + squareRoot); // Output will be 4
-  
-  
+ // Question 9
+ function sumOfDigits(number) {
+  if (number < 0 || !Number.isInteger(number)) {
+    return "Please provide a positive integer.";
+  }
+
+  let sum = 0;
+  while (number > 0) {
+    sum += number % 10;
+    number = Math.floor(number / 10);
+  }
+
+  return sum;
+}
+
+// Example usage:
+const num = 12345;
+const result = sumOfDigits(num);
+console.log(`The sum of digits of ${num} is: ${result}`);
