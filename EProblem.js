@@ -121,3 +121,16 @@ function countVowels(str) {
 const inputString = "Hello, how are you?";
 const vowelCount = countVowels(inputString);
 console.log(`The number of vowels in "${inputString}" is: ${vowelCount}`);
+//Question 11
+function stringLength(str) {
+  if (typeof str !== 'string') {
+    return 'Please provide a valid string.';
+  }
+
+  return str.length;
+}
+
+// Example usage:
+const inputString = 'Hello, world!';
+const length = stringLength(inputString);
+console.log(`The length of the string "${inputString}" is: ${length}`);
