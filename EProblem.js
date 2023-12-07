@@ -90,6 +90,34 @@ function isPalindrome(str) {
 }
 
 // Example usage:
-const num = 12345;
-const result = sumOfDigits(num);
+//const num = 12345;
+//const result = sumOfDigits(num);
 console.log(`The sum of digits of ${num} is: ${result}`);
+//Question 10
+function countVowels(str) {
+  if (typeof str !== 'string') {
+    return 'Please provide a valid string.';
+  }
+
+  // Convert the string to lowercase to make the matching case-insensitive
+  str = str.toLowerCase();
+
+  // Define a regular expression to match vowels
+  const vowelRegex = /[aeiou]/g;
+
+  // Use match() with the vowelRegex to find all occurrences of vowels in the string
+  const vowelsArray = str.match(vowelRegex);
+
+  // If there are no vowels found, return 0
+  if (!vowelsArray) {
+    return 0;
+  }
+
+  // Return the count of vowels
+  return vowelsArray.length;
+}
+
+// Example usage:
+const inputString = "Hello, how are you?";
+const vowelCount = countVowels(inputString);
+console.log(`The number of vowels in "${inputString}" is: ${vowelCount}`);
