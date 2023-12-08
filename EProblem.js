@@ -42,7 +42,7 @@ function isPalindrome(str) {
   }
   
   // Example usage:
-  const array = [1, 2, 3, 4, 5];
+  const array = [1, 2, 3, 4, 5,];
   console.log("The length of the array is: " + getArrayLength(array)); // Output will be 5
   //Question 6
   function getRandomNumber(min, max) {
@@ -51,8 +51,8 @@ function isPalindrome(str) {
   }
   
   // Example usage:
-  let minimumValue = 10;
-  let maximumValue = 20;
+  let minimumValue = 4;
+  let maximumValue = 10;
   
   let randomNum = getRandomNumber(minimumValue, maximumValue);
   console.log("Random number between " + minimumValue + " and " + maximumValue + " is: " + randomNum);
@@ -95,42 +95,21 @@ function isPalindrome(str) {
 console.log(`The sum of digits of ${num} is: ${result}`);
 //Question 10
 function countVowels(str) {
-  if (typeof str !== 'string') {
-    return 'Please provide a valid string.';
-  }
+  // Convert the string to lowercase to simplify comparison
+  const lowerCaseStr = str.toLowerCase();
 
-  // Convert the string to lowercase to make the matching case-insensitive
-  str = str.toLowerCase();
+  // Define the regular expression pattern for vowels
+  const vowelPattern = /[aeiou]/g;
 
-  // Define a regular expression to match vowels
-  const vowelRegex = /[aeiou]/g;
-
-  // Use match() with the vowelRegex to find all occurrences of vowels in the string
-  const vowelsArray = str.match(vowelRegex);
-
-  // If there are no vowels found, return 0
-  if (!vowelsArray) {
-    return 0;
-  }
+  // Match the vowels in the string using the pattern and count the occurrences
+  const vowelMatches = lowerCaseStr.match(vowelPattern);
 
   // Return the count of vowels
-  return vowelsArray.length;
+  return vowelMatches ? vowelMatches.length : 0;
 }
 
 // Example usage:
-const inputString = "Hello, how are you?";
+const inputString = "Gezahagn and Ashenafi";
 const vowelCount = countVowels(inputString);
-console.log(`The number of vowels in "${inputString}" is: ${vowelCount}`);
-//Question 11
-function stringLength(str) {
-  if (typeof str !== 'string') {
-    return 'Please provide a valid string.';
-  }
+console.log("Number of vowels:", vowelCount);
 
-  return str.length;
-}
-
-// Example usage:
-const inputString = 'Hello, world!';
-const length = stringLength(inputString);
-console.log(`The length of the string "${inputString}" is: ${length}`);
