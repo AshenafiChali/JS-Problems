@@ -130,4 +130,4 @@ function convertToUpperCase(str) {
 // Example usage:
 let lowercaseString = "akkam, ashenafi";
 let uppercaseString = convertToUpperCase(lowercaseString);
-console.log(uppercaseString); // Output will be: "AKKAMNODE  ASHENAFI!"
+console.log(uppercaseString); // Output will be: "AKKAM ASHENAFI!"
