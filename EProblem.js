@@ -35,7 +35,7 @@ function isPalindrome(str) {
   
   // Example usage:
   console.log(isPalindrome("racecar")); // Output will be true
-  console.log(isPalindrome("hello")); // Output will be false
+  console.log(isPalindrome("hi")); // Output will be false
   //Question 5
   function getArrayLength(arr) {
     return arr.length;
@@ -112,4 +112,13 @@ function countVowels(str) {
 const inputString = "Gezahagn and Ashenafi";
 const vowelCount = countVowels(inputString);
 console.log("Number of vowels:", vowelCount);
+//question 11.
 
+function getStringLength(str) {
+  return str.length;
+}
+
+// Example usage:
+const myString = "hello, world!";
+const lengthOfString = getStringLength(myString);
+console.log("Length of the string:", lengthOfString); // Output: Length of the string: 13
