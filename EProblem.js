@@ -122,3 +122,12 @@ function getStringLength(str) {
 const myString = "hello, world!";
 const lengthOfString = getStringLength(myString);
 console.log("Length of the string:", lengthOfString); // Output: Length of the string: 13
+//question 12
+function convertToUpperCase(str) {
+  return str.toUpperCase();
+}
+
+// Example usage:
+let lowercaseString = "akkam, ashenafi";
+let uppercaseString = convertToUpperCase(lowercaseString);
+console.log(uppercaseString); // Output will be: "HELLO, WORLD!"
