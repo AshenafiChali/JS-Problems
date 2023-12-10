@@ -131,3 +131,17 @@ function convertToUpperCase(str) {
 let lowercaseString = "akkam, ashenafi";
 let uppercaseString = convertToUpperCase(lowercaseString);
 console.log(uppercaseString); // Output will be: "AKKAM ASHENAFI!"
+//question 13
+function checkSubstring(str, substring) {
+  return str.includes(substring);
+}
+
+// Example usage:
+let mainString = "This is nathan and bethany";
+let subString = "nathan and bethany";
+
+if (checkSubstring(mainString, subString)) {
+  console.log(`The string "${mainString}" contains the substring "${subString}"`);
+} else {
+  console.log(`The string "${mainString}" does not contain the substring "${subString}"`);
+}
