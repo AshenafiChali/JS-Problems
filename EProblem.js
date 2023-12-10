@@ -145,3 +145,15 @@ if (checkSubstring(mainString, subString)) {
 } else {
   console.log(`The string "${mainString}" does not contain the substring "${subString}"`);
 }
+//question 14
+function replaceAllOccurrences(mainString, substringToReplace, replacementSubstring) {
+  return mainString.split(substringToReplace).join(replacementSubstring);
+}
+
+// Example usage:
+let originalString = "This is Nathan. he is my son.";
+let substringToReplace = "is";
+let replacementSubstring = "was";
+
+let modifiedString = replaceAllOccurrences(originalString, substringToReplace, replacementSubstring);
+console.log(modifiedString);
