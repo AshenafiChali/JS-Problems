@@ -123,9 +123,9 @@ function getStringLength(str) {
 }
 
 // Example usage:
-const myString = "hello, world!";
+const myString = "hello, Ashenafi!";
 const lengthOfString = getStringLength(myString);
-console.log("Length of the string:", lengthOfString); // Output: Length of the string: 13
+console.log("Length of the string:", lengthOfString); // Output: Length of the string: 16
 //question 12
 function convertToUpperCase(str) {
   return str.toUpperCase();
