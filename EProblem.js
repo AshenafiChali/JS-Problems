@@ -170,3 +170,12 @@ function removeWhitespace(str) {
 let stringWithWhitespace = 'This is a number one world group';
 let stringWithoutWhitespace = removeWhitespace(stringWithWhitespace);
 console.log(stringWithoutWhitespace); // Output: "Thisisanumberoneworldgroup"
+//question 16
+function filterOutNegativeNumbers(numbers) {
+  return numbers.filter(number => number >= 0);
+}
+
+// Example usage:
+let numbersArray = [5, -3, 10, -8, 0, 7, -2];
+let filteredArray = filterOutNegativeNumbers(numbersArray);
+console.log(filteredArray); // Output: [5, 10, 0, 7]
