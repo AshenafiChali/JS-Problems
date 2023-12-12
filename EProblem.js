@@ -179,3 +179,18 @@ function filterOutNegativeNumbers(numbers) {
 let numbersArray = [5, -3, 10, -8, 0, 7, -2];
 let filteredArray = filterOutNegativeNumbers(numbersArray);
 console.log(filteredArray); // Output: [5, 10, 0, 7]
+//question 17
+function getObjectKeys(obj) {
+  return Object.keys(obj);
+}
+
+// Example usage:
+let sampleObject = {
+  name: 'John',
+  age: 30,
+  email: 'john@example.com',
+  address: '123 Main St'
+};
+
+let keysArray = getObjectKeys(sampleObject);
+console.log(keysArray); // Output: ["name", "age", "email", "address"]
