@@ -194,3 +194,36 @@ let sampleObject = {
 
 let keysArray = getObjectKeys(sampleObject);
 console.log(keysArray); // Output: ["name", "age", "email", "address"]
+//question 18
+function addDefaultName(obj) {
+  if (!obj.hasOwnProperty('name') || obj.name === '' || obj.name === undefined || obj.name === null) {
+    obj.name = 'unknown';
+  }
+  return obj;
+}
+
+// Example usage:
+let person1 = {
+  age: 25,
+  gender: 'male'
+};
+
+let person2 = {
+  name: '',
+  age: 30,
+  gender: 'female'
+};
+
+let person3 = {
+  name: null,
+  age: 28,
+  gender: 'non-binary'
+};
+
+let updatedPerson1 = addDefaultName(person1);
+let updatedPerson2 = addDefaultName(person2);
+let updatedPerson3 = addDefaultName(person3);
+
+console.log(updatedPerson1); // Output: { age: 25, gender: 'male', name: 'unknown' }
+console.log(updatedPerson2); // Output: { name: 'unknown', age: 30, gender: 'female' }
+console.log(updatedPerson3); // Output: { name: 'unknown', age: 28, gender: 'non-binary' }
