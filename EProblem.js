@@ -161,3 +161,12 @@ let replacementSubstring = "was";
 
 let modifiedString = replaceAllOccurrences(originalString, substringToReplace, replacementSubstring);
 console.log(modifiedString);
+//question 15
+function removeWhitespace(str) {
+  return str.replace(/\s/g, '');
+}
+
+// Example usage:
+let stringWithWhitespace = 'This is a number one world group';
+let stringWithoutWhitespace = removeWhitespace(stringWithWhitespace);
+console.log(stringWithoutWhitespace); // Output: "Thisisanumberoneworldgroup"
