@@ -236,3 +236,13 @@ function incrementNumber(number) {
 let myNumber = 10;
 let incrementedNumber = incrementNumber(myNumber);
 console.log(incrementedNumber); // Output will be 11
+//Question 20
+function multiplyByThree(number) {
+  return number * 3;
+}
+
+// Example usage:
+let inputNumber = 5;
+let result1 = multiplyByThree(inputNumber);
+console.log("Result:", result1); // Output will be 15
+//question 21
