@@ -258,4 +258,34 @@ function getFirstElement(numbersArray) {
 let numbers = [20, 25, 30, 40, 50];
 let firstElement = getFirstElement(numbers);
 console.log("First Element:", firstElement); // Output will be 20
+//question 22
+function calculatePoints(twoPointers, threePointers) {
+  // Calculate total points: 2 points for each 2-pointer and 3 points for each 3-pointer
+  const totalPoints = (2 * twoPointers) + (3 * threePointers);
+  return totalPoints;
+}
+
+// Example usage:
+let twoPointersScored = 8;
+let threePointersScored = 5;
+let finalPoints = calculatePoints(twoPointersScored, threePointersScored);
+console.log("Final Points:", finalPoints); // Output will be 31
+//question 23
+function isSumLessThan30(num1, num2) {
+  // Calculate the sum of the two numbers
+  let sum = num1 + num2;
+
+  // Check if the sum is less than 30
+  if (sum < 30) {
+    return true; // Return true if the sum is less than 30
+  } else {
+    return false; // Return false if the sum is greater than or equal to 30
+  }
+}
+
+// Example usage:
+let number1 = 15;
+let number2 = 10;
+let result2 = isSumLessThan30(number1, number2);
+console.log("Is the sum less than 30?", result2); // Output will be true
 
