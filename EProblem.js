@@ -246,3 +246,16 @@ let inputNumber = 5;
 let result1 = multiplyByThree(inputNumber);
 console.log("Result:", result1); // Output will be 15
 //question 21
+function getFirstElement(numbersArray) {
+  if (Array.isArray(numbersArray) && numbersArray.length > 0) {
+    return numbersArray[0];
+  } else {
+    return undefined; // Return undefined if the array is empty or not provided
+  }
+}
+
+// Example usage:
+let numbers = [20, 25, 30, 40, 50];
+let firstElement = getFirstElement(numbers);
+console.log("First Element:", firstElement); // Output will be 20
+
