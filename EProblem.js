@@ -227,3 +227,12 @@ let updatedPerson3 = addDefaultName(person3);
 console.log(updatedPerson1); // Output: { age: 25, gender: 'male', name: 'unknown' }
 console.log(updatedPerson2); // Output: { name: 'unknown', age: 30, gender: 'female' }
 console.log(updatedPerson3); // Output: { name: 'unknown', age: 28, gender: 'non-binary' }
+//question 19
+function incrementNumber(number) {
+  return number + 1;
+}
+
+// Example usage:
+let myNumber = 10;
+let incrementedNumber = incrementNumber(myNumber);
+console.log(incrementedNumber); // Output will be 11
