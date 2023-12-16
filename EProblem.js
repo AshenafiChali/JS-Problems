@@ -296,3 +296,13 @@ function isEqual(num1, num2) {
 // Example usage:
 console.log(isEqual(5, 5));  // Output will be: true
 console.log(isEqual(5, 10)); // Output will be: false
+//Question 25
+function calculator(expression) {
+  return eval(expression);
+}
+
+// Examples:
+console.log(calculator("23+4"));      // Output: 27
+console.log(calculator("45-15"));     // Output: 30
+console.log(calculator("13+2-5*2"));  // Output: 5
+console.log(calculator("49/7*2-3"));  // Output: 11
