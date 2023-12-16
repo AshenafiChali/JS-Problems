@@ -288,4 +288,11 @@ let number1 = 15;
 let number2 = 10;
 let result2 = isSumLessThan30(number1, number2);
 console.log("Is the sum less than 30?", result2); // Output will be true
+//question 24
+function isEqual(num1, num2) {
+  return num1 === num2;
+}
 
+// Example usage:
+console.log(isEqual(5, 5));  // Output will be: true
+console.log(isEqual(5, 10)); // Output will be: false
