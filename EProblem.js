@@ -314,3 +314,12 @@ function compareStringLengths(str1, str2) {
 // Test cases:
 console.log(compareStringLengths("hello", "world")); // Output: true
 console.log(compareStringLengths("hi", "hello")); // Output: false
+//Question 27.
+function isDivisibleBy5(number) {
+  return number % 5 === 0;
+}
+
+// Test cases
+console.log(isDivisibleBy5(10)); // Output: true
+console.log(isDivisibleBy5(7));  // Output: false
+console.log(isDivisibleBy5(0));  // Output: true
