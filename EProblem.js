@@ -329,3 +329,23 @@ const num2 = 7;
 
 console.log(isDivisibleByFive(num1)); // Output will be 'true' because 15 is divisible by 5.
 console.log(isDivisibleByFive(num2)); // Output will be 'false' because 7 is not divisible by 5.
+//qustion 28
+function shouldServeDrinks(age, isOnBreak) {
+  return age >= 18 && !isOnBreak;
+}
+
+// Example usage:
+const customerAge = 25;
+const bartenderOnBreak = false;
+
+const serveDrinks = shouldServeDrinks(customerAge, bartenderOnBreak);
+console.log(serveDrinks); // Output will be 'true' if the customer is 18 or older and the bartender is not on a break.
+//Question 29
+function isLengthEven(str) {
+  return str.length % 2 === 0;
+}
+
+// Test cases
+console.log(isLengthEven("Hello")); // Output: false (length is odd)
+console.log(isLengthEven("World")); // Output: true (length is even)
+
