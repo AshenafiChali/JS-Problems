@@ -318,3 +318,14 @@ const string2 = "World";
 
 const result3 = compareStringLengths(string1, string2);
 console.log(result3); // Output will be 'false' as the lengths of string1 and string2 are different.
+//question 27
+function isDivisibleByFive(number) {
+  return number % 5 === 0;
+}
+
+// Example usage:
+const num1 = 15;
+const num2 = 7;
+
+console.log(isDivisibleByFive(num1)); // Output will be 'true' because 15 is divisible by 5.
+console.log(isDivisibleByFive(num2)); // Output will be 'false' because 7 is not divisible by 5.
