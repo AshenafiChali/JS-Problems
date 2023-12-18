@@ -296,30 +296,17 @@ function isEqual(num1, num2) {
 // Example usage:
 console.log(isEqual(5, 5));  // Output will be: true
 console.log(isEqual(5, 10)); // Output will be: false
-//Question 25
+//question 25
 function calculator(expression) {
-  return eval(expression);
+  try {
+    return eval(expression);
+  } catch (error) {
+    return "Invalid expression";
+  }
 }
 
-// Examples:
+// Test cases
 console.log(calculator("23+4"));      // Output: 27
 console.log(calculator("45-15"));     // Output: 30
 console.log(calculator("13+2-5*2"));  // Output: 5
 console.log(calculator("49/7*2-3"));  // Output: 11
-//Question 26
-function compareStringLengths(str1, str2) {
-  return str1.length === str2.length;
-}
-
-// Test cases:
-console.log(compareStringLengths("hello", "world")); // Output: true
-console.log(compareStringLengths("hi", "hello")); // Output: false
-//Question 27.
-function isDivisibleBy5(number) {
-  return number % 5 === 0;
-}
-
-// Test cases
-console.log(isDivisibleBy5(10)); // Output: true
-console.log(isDivisibleBy5(7));  // Output: false
-console.log(isDivisibleBy5(0));  // Output: true
