@@ -307,4 +307,14 @@ function calculator(expression) {
   console.log(calculator("45-15")); // Output: 30
   console.log(calculator("13+2-5*2")); // Output: 5
   console.log(calculator("49/7*2-3")); // Output: 11
-  
+//question 26
+function compareStringLengths(str1, str2) {
+  return str1.length === str2.length;
+}
+
+// Example usage:
+const string1 = "Hello";
+const string2 = "World";
+
+const result3 = compareStringLengths(string1, string2);
+console.log(result3); // Output will be 'false' as the lengths of string1 and string2 are different.
