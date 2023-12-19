@@ -392,5 +392,13 @@ function arrayToString(arr) {
 console.log(arrayToString([1, 2, 3, 4, 5, 6])); // Output: "123456"
 console.log(arrayToString(["a", "b", "c", "d", "e", "f"])); // Output: "abcdef"
 console.log(arrayToString([1, 2, 3, "a", "s", "dAAAA"])); // Output: "123asdAAAA"
+//question 34
+const helloName = (name) => `Hello ${name}!`;
+
+// Test examples
+console.log(helloName("Nathan")); // Output: Hello Nathan!
+console.log(helloName("Bethany")); // Output: Hello Bethany!
+console.log(helloName("Ashenafi")); // Output: Hello Ashenafi!
+
 
 
