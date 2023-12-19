@@ -421,6 +421,23 @@ function printOddNumbers() {
 
 // Call the function to print odd numbers less than 100
 printOddNumbers();
+//question 37
+function sumBetweenNumbers(num1, num2) {
+  let start = Math.min(num1, num2);
+  let end = Math.max(num1, num2);
+  let sum = 0;
+
+  for (let i = start; i <= end; i++) {
+    sum += i;
+  }
+
+  return sum;
+}
+
+// Example usage:
+let result4 = sumBetweenNumbers(3, 7);
+console.log("Sum between 3 and 7 is:", result4); // Output will be 25
+
 
 
 
