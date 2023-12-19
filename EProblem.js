@@ -348,4 +348,30 @@ function isLengthEven(str) {
 // Test cases
 console.log(isLengthEven("Hello")); // Output: false (length is odd)
 console.log(isLengthEven("World")); // Output: true (length is even)
+//question 30
+function getLastItem(arr) {
+  if (Array.isArray(arr) && arr.length > 0) {
+      return arr[arr.length - 1];
+  } else {
+      return undefined; // Returns undefined if the array is empty or not provided
+  }
+}
+
+// Example usage:
+const myArray = [1, 2, 3, 4, 5, 6, 7];
+const lastItem = getLastItem(myArray);
+console.log("Last item:", lastItem); // Output: Last item: 7
+//question 31
+function removeFirstCharacter(word) {
+  if (typeof word === 'string' && word.length > 1) {
+    return word.slice(1); // Returns the word excluding the first character
+  } else {
+    return "Invalid input. Please provide a word with more than one character.";
+  }
+}
+
+// Example usage:
+const inputWord = "Ashenafi";
+const newWord = removeFirstCharacter(inputWord);
+console.log(newWord); // Output will be "shenafi"
 
