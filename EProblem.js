@@ -561,12 +561,46 @@ const peopleArray1 = [
 
 const oldestPerson = findOldestPersonName(peopleArray1);
 console.log("The oldest person is:", oldestPerson);
+//question 44
+function findYoungestPerson(arr) {
+  if (arr.length === 0) {
+    return null; // Return null if the array is empty
+  }
 
+  let youngestAge = arr[0].age;
+  let youngestName = arr[0].name;
 
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i].age < youngestAge) {
+      youngestAge = arr[i].age;
+      youngestName = arr[i].name;
+    }
+  }
 
+  return youngestName;
+}
 
+// Example usage:
+const people = [
+  { name: 'Ashenafi', age: 25, email: 'ashenafi@example.com' },
+  { name: 'Bethany', age: 20, email: 'bethany@example.com' },
+  { name: 'Nathan', age: 22, email: 'nathan@example.com' }
+];
 
+const youngest = findYoungestPerson(people);
+console.log('Youngest person:', youngest); // This will print the name of the youngest person
+//question 45
+function extractNames(arrayOfObjects) {
+  return arrayOfObjects.map(person => person.name);
+}
 
+// Example usage:
+const people4 = [
+  { name: 'Ashenafi', age: 30, email: 'ashenafi@example.com' },
+  { name: 'Bethany', age: 25, email: 'bethany@example.com' },
+  { name: 'Nathan', age: 35, email: 'nathan@example.com' }
+];
 
-
-
+const names = extractNames(people4);
+console.log(names); // Output: ['Ashenafi', 'Bethany', 'Nathan']
+//question 46
