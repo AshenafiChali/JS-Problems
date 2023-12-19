@@ -603,4 +603,4 @@ const people4 = [
 
 const names = extractNames(people4);
 console.log(names); // Output: ['Ashenafi', 'Bethany', 'Nathan']
-//question 46
+
