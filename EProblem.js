@@ -471,6 +471,24 @@ const users = [
 
 // Call the function with the array of objects
 sendConfirmationEmail(users);
+//question 40
+
+function removeUnderagePersons(people) {
+  // Filter out persons with age less than 18
+  return people.filter(person => person.age >= 18);
+}
+
+// Example array of objects
+const peopleArray = [
+  { name: 'Ashenafi', age: 40, email: 'ashenafi@example.com' },
+  { name: 'Bethany', age: 9, email: 'bethany@example.com' },
+  { name: 'Nathan', age: 20, email: 'nathan@example.com' }
+];
+
+// Remove persons under 18
+const filteredPeople = removeUnderagePersons(peopleArray);
+
+console.log(filteredPeople); // Output the filtered array
 
 
 
