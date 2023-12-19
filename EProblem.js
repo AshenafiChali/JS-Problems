@@ -489,6 +489,80 @@ const peopleArray = [
 const filteredPeople = removeUnderagePersons(peopleArray);
 
 console.log(filteredPeople); // Output the filtered array
+//question 41
+function sumAges(arr) {
+  let totalAge = 0;
+
+  for (let i = 0; i < arr.length; i++) {
+    if (typeof arr[i].age === 'number') {
+      totalAge += arr[i].age;
+    }
+  }
+
+  return totalAge;
+}
+
+// Example array of objects
+let people1 = [
+  { name: 'Ashenafi', age: 30, email: 'ashenafi@example.com' },
+  { name: 'Nathan', age: 12, email: 'nathan@example.com' },
+  { name: 'Bethany', age: 10, email: 'bethany@example.com' }
+];
+
+// Calculate the sum of ages
+let totalAges = sumAges(people1);
+console.log('Total ages:', totalAges); // Output the total ages
+//question 42
+function calculateAverageAge(peopleArray) {
+  if (peopleArray.length === 0) {
+    return 0; // Return 0 for an empty array (to avoid division by zero)
+  }
+
+  const totalAge = peopleArray.reduce((acc, person) => acc + person.age, 0);
+  const averageAge = totalAge / peopleArray.length;
+
+  return averageAge;
+}
+
+// Example usage:
+const people2 = [
+  { name: 'Ashenafi', age: 40, email: 'ashenafi@example.com' },
+  { name: 'Nathan', age: 20, email: 'nathan@example.com' },
+  { name: 'Bethany', age: 16, email: 'bethany@example.com' },
+];
+
+const averageAge = calculateAverageAge(people2);
+console.log('Average age:', averageAge);
+//question 43
+function findOldestPersonName(people) {
+  if (people.length === 0) {
+    return "No people in the list";
+  }
+
+  let oldestAge = -Infinity;
+  let oldestPersonName = '';
+
+  for (let i = 0; i < people.length; i++) {
+    if (people[i].age > oldestAge) {
+      oldestAge = people[i].age;
+      oldestPersonName = people[i].name;
+    }
+  }
+
+  return oldestPersonName;
+}
+
+// Example usage:
+const peopleArray1 = [
+  { name: 'Ashenafi', age: 28, email: 'ashenafi@example.com' },
+  { name: 'Nathan', age: 35, email: 'nathan@example.com' },
+  { name: 'Bethany', age: 30, email: 'bethany@example.com' }
+];
+
+const oldestPerson = findOldestPersonName(peopleArray1);
+console.log("The oldest person is:", oldestPerson);
+
+
 
 
 
