@@ -453,6 +453,25 @@ const data = [
 
 const filteredData = removeObjectsWithoutEmail(data);
 console.log(filteredData);
+//question 39
+function sendConfirmationEmail(objectsArray) {
+  objectsArray.forEach(obj => {
+    const { name, email } = obj;
+    console.log(`Hi ${name}, we have sent a confirmation email to your email address ${email}`);
+    // Replace console.log with your email sending logic if applicable
+  });
+}
+
+// Example array of objects
+const users = [
+  { name: 'Ashenafi', age: 25, email: 'ashenafi@example.com' },
+  { name: 'Nathan', age: 30, email: 'nathan@example.com' },
+  { name: 'Bethany', age: 28, email: 'bethany@example.com' }
+];
+
+// Call the function with the array of objects
+sendConfirmationEmail(users);
+
 
 
 
