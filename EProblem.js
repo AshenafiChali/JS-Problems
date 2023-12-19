@@ -399,6 +399,30 @@ const helloName = (name) => `Hello ${name}!`;
 console.log(helloName("Nathan")); // Output: Hello Nathan!
 console.log(helloName("Bethany")); // Output: Hello Bethany!
 console.log(helloName("Ashenafi")); // Output: Hello Ashenafi!
+//question 35
+function carsNeeded(n) {
+  if (n <= 0) {
+    return 0;
+  } else {
+    return Math.ceil(n / 5); // Calculate the number of cars needed rounding up to the nearest integer
+  }
+}
+
+// Example usage:
+const numberOfPeople = 17; // Change this value to test different scenarios
+const cars = carsNeeded(numberOfPeople);
+console.log(`To seat ${numberOfPeople} people, you'll need ${cars} car(s)`);
+//question 36
+function printOddNumbers() {
+  for (let i = 1; i < 100; i += 2) {
+    console.log(i);
+  }
+}
+
+// Call the function to print odd numbers less than 100
+printOddNumbers();
+
+
 
 
 
