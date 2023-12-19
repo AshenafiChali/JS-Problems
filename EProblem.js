@@ -374,4 +374,23 @@ function removeFirstCharacter(word) {
 const inputWord = "Ashenafi";
 const newWord = removeFirstCharacter(inputWord);
 console.log(newWord); // Output will be "shenafi"
+//question 32
+function makePair(arg1, arg2) {
+  return [arg1, arg2];
+}
+
+// Test cases
+console.log(makePair(1, 2));        // Output: [1, 2]
+console.log(makePair(51, 21));      // Output: [51, 21]
+console.log(makePair(512124, 215)); // Output: [512124, 215]
+//question 33
+function arrayToString(arr) {
+  return arr.join('');
+}
+
+// Test cases
+console.log(arrayToString([1, 2, 3, 4, 5, 6])); // Output: "123456"
+console.log(arrayToString(["a", "b", "c", "d", "e", "f"])); // Output: "abcdef"
+console.log(arrayToString([1, 2, 3, "a", "s", "dAAAA"])); // Output: "123asdAAAA"
+
 
