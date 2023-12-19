@@ -437,6 +437,22 @@ function sumBetweenNumbers(num1, num2) {
 // Example usage:
 let result4 = sumBetweenNumbers(3, 7);
 console.log("Sum between 3 and 7 is:", result4); // Output will be 25
+//question 38
+function removeObjectsWithoutEmail(arr) {
+  return arr.filter(obj => obj.hasOwnProperty('email') && obj.email !== undefined && obj.email !== null && obj.email !== '');
+}
+
+// Example usage:
+const data = [
+  { name: 'Nathan', age: 25, email: 'nathan@example.com' },
+  { name: 'Ashenafi', age: 30 },
+  { name: 'Bethany', age: 22, email: 'bethany@example.com' },
+  { name: 'Getu', age: 28, email: '' },
+  { name: 'Sena', age: 35, email: null },
+];
+
+const filteredData = removeObjectsWithoutEmail(data);
+console.log(filteredData);
 
 
 
