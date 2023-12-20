@@ -473,9 +473,9 @@ const users = [
 sendConfirmationEmail(users);
 //question 40
 
-function removeUnderagePersons(people) {
+function removeUnderagePersons(people1) {
   // Filter out persons with age less than 18
-  return people.filter(person => person.age >= 18);
+  return people1.filter(person => person.age >= 18);
 }
 
 // Example array of objects
@@ -486,9 +486,8 @@ const peopleArray = [
 ];
 
 // Remove persons under 18
-const filteredPeople = removeUnderagePersons(peopleArray);
-
-console.log(filteredPeople); // Output the filtered array
+const filteredPeople1 = removeUnderagePersons(peopleArray);
+console.log(filteredPeople1); // Output the filtered array
 //question 41
 function sumAges(arr) {
   let totalAge = 0;
@@ -581,13 +580,13 @@ function findYoungestPerson(arr) {
 }
 
 // Example usage:
-const people = [
+const people3= [
   { name: 'Ashenafi', age: 25, email: 'ashenafi@example.com' },
   { name: 'Bethany', age: 20, email: 'bethany@example.com' },
   { name: 'Nathan', age: 22, email: 'nathan@example.com' }
 ];
 
-const youngest = findYoungestPerson(people);
+const youngest = findYoungestPerson(people3);
 console.log('Youngest person:', youngest); // This will print the name of the youngest person
 //question 45
 function extractNames(arrayOfObjects) {
@@ -603,4 +602,120 @@ const people4 = [
 
 const names = extractNames(people4);
 console.log(names); // Output: ['Ashenafi', 'Bethany', 'Nathan']
+//question 46
+function getAdultsList(arr) {
+  return arr.map(person => {
+    const { name, age, email } = person;
+    const isAdult = age >= 18;
+    const resultObj = {
+      name,
+      isAdult,
+    };
+
+    if (email && email !== '') {
+      resultObj.email = email;
+    }
+
+    return resultObj;
+  });
+}
+
+// Example usage:
+const people5 = [
+  { name: 'Alice', age: 25, email: 'alice@example.com' },
+  { name: 'Bob', age: 17, email: '' },
+  { name: 'Charlie', age: 20, email: 'charlie@example.com' },
+];
+
+const processedPeople = getAdultsList(people5);
+console.log(processedPeople);
+//question 47
+function sortByAge(arr) {
+  // Using the Array.sort() method to sort the array of objects by 'age'
+  arr.sort((a, b) => a.age - b.age);
+  return arr;
+}
+
+// Example array of objects
+const people6 = [
+  { name: 'Alice', age: 30, email: 'alice@example.com' },
+  { name: 'Bob', age: 25, email: 'bob@example.com' },
+  { name: 'Charlie', age: 35, email: 'charlie@example.com' }
+];
+
+// Calling the function sortByAge() with the 'people' array
+const sortedByAge = sortByAge(people6);
+
+// Displaying the sorted array of objects
+console.log(sortedByAge);
+//question 48
+
+function sortArrayOfObjectsByName(arr) {
+  // Using the Array.sort() method to sort the array by the 'name' key
+  arr.sort((a, b) => {
+    const nameA = a.name.toUpperCase(); // Convert names to uppercase for case-insensitive comparison
+    const nameB = b.name.toUpperCase();
+
+    if (nameA < nameB) {
+      return -1;
+    }
+    if (nameA > nameB) {
+      return 1;
+    }
+    return 0; // Names are equal
+  });
+
+  return arr;
+}
+
+// Example usage:
+const arrayOfObjects = [
+  { name: 'John', age: 30, email: 'john@example.com' },
+  { name: 'Alice', age: 25, email: 'alice@example.com' },
+  { name: 'Bob', age: 28, email: 'bob@example.com' }
+];
+
+const sortedArray = sortArrayOfObjectsByName(arrayOfObjects);
+console.log(sortedArray);
+//question 49
+function findLongestName(people) {
+  let longestName = '';
+  
+  for (let i = 0; i < people.length; i++) {
+    const currentName = people[i].name;
+    
+    if (currentName.length > longestName.length) {
+      longestName = currentName;
+    }
+  }
+  
+  return longestName;
+}
+
+// Example usage:
+const peopleArray3 = [
+  { name: 'Alice', age: 30, email: 'alice@example.com' },
+  { name: 'Bob', age: 25, email: 'bob@example.com' },
+  { name: 'Charlie', age: 35, email: 'charlie@example.com' },
+  // Add more objects as needed
+];
+
+const longestName = findLongestName(peopleArray3);
+console.log("Longest name:", longestName);
+//question 50
+
+function formatObjects(array) {
+  return array.map(obj => `${obj.name} is ${obj.age} years old and has ${obj.email}`);
+}
+
+// Example array of objects
+const arrayOfObjects2 = [
+  { name: 'Alice', age: 25, email: 'alice@example.com' },
+  { name: 'Bob', age: 30, email: 'bob@example.com' },
+  { name: 'Charlie', age: 22, email: 'charlie@example.com' }
+];
+
+// Calling the function with the example array
+const formattedArray = formatObjects(arrayOfObjects2);
+console.log(formattedArray);
 
