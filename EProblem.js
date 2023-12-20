@@ -622,9 +622,9 @@ function getAdultsList(arr) {
 
 // Example usage:
 const people5 = [
-  { name: 'Alice', age: 25, email: 'alice@example.com' },
-  { name: 'Bob', age: 17, email: '' },
-  { name: 'Charlie', age: 20, email: 'charlie@example.com' },
+  { name: 'Ashenafi', age: 25, email: 'ashenafi@example.com' },
+  { name: 'Bethany', age: 17, email: '' },
+  { name: 'Nathan', age: 20, email: 'nathan@example.com' },
 ];
 
 const processedPeople = getAdultsList(people5);
@@ -638,9 +638,9 @@ function sortByAge(arr) {
 
 // Example array of objects
 const people6 = [
-  { name: 'Alice', age: 30, email: 'alice@example.com' },
-  { name: 'Bob', age: 25, email: 'bob@example.com' },
-  { name: 'Charlie', age: 35, email: 'charlie@example.com' }
+  { name: 'Nathan', age: 30, email: 'nathan@example.com' },
+  { name: 'Bethany', age: 25, email: 'bethany@example.com' },
+  { name: 'Ashenafi', age: 35, email: 'ashenafi@example.com' }
 ];
 
 // Calling the function sortByAge() with the 'people' array
@@ -670,9 +670,9 @@ function sortArrayOfObjectsByName(arr) {
 
 // Example usage:
 const arrayOfObjects = [
-  { name: 'John', age: 30, email: 'john@example.com' },
-  { name: 'Alice', age: 25, email: 'alice@example.com' },
-  { name: 'Bob', age: 28, email: 'bob@example.com' }
+  { name: 'Ashenafi', age: 30, email: 'ashenafi@example.com' },
+  { name: 'Bethany', age: 25, email: 'bethany@example.com' },
+  { name: 'Nathan', age: 28, email: 'nathan@example.com' }
 ];
 
 const sortedArray = sortArrayOfObjectsByName(arrayOfObjects);
@@ -694,9 +694,9 @@ function findLongestName(people) {
 
 // Example usage:
 const peopleArray3 = [
-  { name: 'Alice', age: 30, email: 'alice@example.com' },
-  { name: 'Bob', age: 25, email: 'bob@example.com' },
-  { name: 'Charlie', age: 35, email: 'charlie@example.com' },
+  { name: 'Ashenafi', age: 30, email: 'ashenafi@example.com' },
+  { name: 'Nathan', age: 25, email: 'nathan@example.com' },
+  { name: 'Bethany', age: 35, email: 'bethany@example.com' },
   // Add more objects as needed
 ];
 
@@ -710,9 +710,9 @@ function formatObjects(array) {
 
 // Example array of objects
 const arrayOfObjects2 = [
-  { name: 'Alice', age: 25, email: 'alice@example.com' },
-  { name: 'Bob', age: 30, email: 'bob@example.com' },
-  { name: 'Charlie', age: 22, email: 'charlie@example.com' }
+  { name: 'Ashenafi', age: 25, email: 'ashenafi@example.com' },
+  { name: 'Nathan', age: 30, email: 'nathan@example.com' },
+  { name: 'Bethany', age: 22, email: 'bethany@example.com' }
 ];
 
 // Calling the function with the example array
